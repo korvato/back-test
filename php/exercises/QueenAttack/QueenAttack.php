@@ -8,7 +8,7 @@ class QueenAttack
      */
     public function placeQueen(int $i, int $j): bool
     {
-        if( (($i < 0) || ($i > 8)) && (($j < 0) || ($j > 8))){
+        if( (($i < 0) || ($i > 8)) && (($j < 0) || ($j > 8)) ){
             throw new InvalidArgumentException("the queen's coordinates are not valid on the chessboard of 8 by 8");
         }
     }
