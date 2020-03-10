@@ -27,7 +27,7 @@ class QueenAttack
             return true;
         }else{
             if(($white[0] < $black[0])){
-                while( ($white[0]<$black[0]) && ($white[0]<=8) && ($white[1]<=8)){
+                while( ($white[0]<$black[0]) && (($white[0]<=8) || ($white[1]<=8)) ){
 
                     if($white[0]<8){
                         $white[0]++;
